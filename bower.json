@@ -1,0 +1,22 @@
+{
+  "name": "circle-progress",
+  "description": "A circular progress bar",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "progress",
+    "loading",
+    "circle"
+  ],
+  "authors": [
+    "Héctor Molinero Fernández <hector@molinero.xyz>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zant95/circle-progress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zant95/circle-progress.git"
+  },
+  "main": "circle-progress.html"
+}
+
