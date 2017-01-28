@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/zant95/circle-progress.git"
   },
-  "main": "circle-progress.html"
+  "main": "circle-progress.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.x.x"
+  }
 }
 
