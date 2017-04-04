@@ -19,7 +19,7 @@
   },
   "main": "circle-progress.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#1.x.x"
+    "polymer": "Polymer/polymer#^2.0.0-rc.1"
   }
 }
 
