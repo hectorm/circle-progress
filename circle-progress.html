@@ -1,3 +1,5 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
 <dom-module id="circle-progress">
 	<template>
 		<style>
@@ -27,33 +29,39 @@
 	</template>
 
 	<script>
+	(function () {
 		'use strict';
 
-		Polymer({
-			'is': 'circle-progress',
-			'properties': {
-				'value': {
-					'type': Number,
-					'value': 0
-				},
-				'total': {
-					'type': Number,
-					'value': 100
-				},
-				'radius': {
-					'type': Number,
-					'value': 25
-				},
-				'stroke': {
-					'type': Number,
-					'value': 50
-				}
-			},
-			'_circle': function (radius, stroke) {
+		class CircleProgress extends Polymer.Element {
+			static get is () { return 'circle-progress'; }
+
+			static get properties () {
+				return {
+					'value': {
+						'type': Number,
+						'value': 0
+					},
+					'total': {
+						'type': Number,
+						'value': 100
+					},
+					'radius': {
+						'type': Number,
+						'value': 25
+					},
+					'stroke': {
+						'type': Number,
+						'value': 50
+					}
+				};
+			}
+
+			_circle (radius, stroke) {
 				return radius + stroke / 2;
-			},
+			}
+
 			// Extracted from Raphaël JavaScript Vector Library (https://github.com/DmitryBaranovskiy/raphael)
-			'_arc': function (value, total, R) {
+			_arc (value, total, R) {
 				let alpha = 360 / total * value;
 				let a = (90 - alpha) * Math.PI / 180;
 				let x = 50 + R * Math.cos(a);
@@ -68,7 +76,9 @@
 
 				return path.join(' ');
 			}
-		});
+		}
+
+		customElements.define(CircleProgress.is, CircleProgress);
+	})();
 	</script>
 </dom-module>
-
