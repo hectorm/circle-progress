@@ -12,10 +12,10 @@
     "Héctor Molinero Fernández <hector@molinero.xyz>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/zant95/circle-progress",
+  "homepage": "https://github.com/hectorm/circle-progress",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zant95/circle-progress.git"
+    "url": "https://github.com/hectorm/circle-progress.git"
   },
   "main": "circle-progress.html",
   "dependencies": {
